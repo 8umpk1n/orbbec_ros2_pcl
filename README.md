@@ -1,9 +1,10 @@
 # orbbec_ros2_pcl
 Orbbec 3D Camera    绿色植物背景分离
   需下载Orbbec_ros2
-   #需修改gemini_330_series.launch.py中enable_colored_point_cloud为true
-  1.启动相机节点
   ```bash
+  #需修改gemini_330_series.launch.py中enable_colored_point_cloud为true
+  1.启动相机节点
+  
   ros2 launch orbbec_camera  gemini_330_series.launch.py 
 
   2.编译文件
