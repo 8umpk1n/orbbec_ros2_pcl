@@ -1,0 +1,23 @@
+pcl_processor:
+  ros__parameters:
+    # 过滤器参数
+    axis_filters:
+      z: [0.0, 3.0]    # 深度(米)
+      x: [-1.0, 1.0]   
+      y: [-1.0, 1.0]   
+    
+    # 颜色提取参数
+    color_thresholds:
+      min_hue: 20.0     # 最小绿色色调
+      max_hue: 110.0    # 最大绿色色调
+      min_saturation: 0.2  # 最小饱和度
+      min_value: 0.15     # 最小明度
+    
+    # 聚类参数
+    clustering:
+      tolerance: 0.1    # 10cm距离阈值
+      min_cluster_size: 10000  # 最小簇点数
+      max_cluster_size: 250000 # 最大簇点数
+    
+    # 处理间隔（毫秒）
+    process_interval: 5000 
